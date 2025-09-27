@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funeral Brochure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(to right, #2c3e50, #4a6582);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: normal;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+        
+        .download-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .download-btn:hover {
+            background: linear-gradient(to right, #2980b9, #2471a3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .download-btn:active {
+            transform: translateY(0);
+        }
+        
+        .brochure-container {
+            padding: 20px;
+        }
+        
+        .page {
+            margin-bottom: 40px;
+            text-align: center;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .page:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+        }
+        
+        .page-image {
+            max-width: 100%;
+            height: auto;
+            max-height: 90vh;
+            object-fit: contain;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+        
+        .page-number {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #777;
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                border-radius: 0;
+            }
+            
+            h1 {
+                font-size: 1.6rem;
+            }
+            
+            .page-image {
+                max-height: 85vh;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.4rem;
+            }
+            
+            .download-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .brochure-container {
+                padding: 10px;
+            }
+            
+            .page {
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IN LOVING MEMORY</h1>
+            <H2>Of the late Efua Prah</H2>
+            <p class="subtitle">Scroll to view all pages</p>
+        </header>
+        
+        <div class="download-section">
+            <a href="./web.pdf" class="download-btn" id="downloadLink">Download PDF Brochure</a>
+            <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">
+                <!-- Placeholder for PDF link - replace # with your actual PDF URL -->
+                
+            </p>
+        </div>
+        
+        <div class="brochure-container">
+            <!-- Page 1 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_1.jpg" alt="Page 1" class="page-image">
+                <div class="page-number">Page 1 of 14</div>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_2.jpg" alt="Page 2" class="page-image">
+                <div class="page-number">Page 2 of 14</div>
+            </div>
+            
+            <!-- Page 3 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_3.jpg" alt="Page 3" class="page-image">
+                <div class="page-number">Page 3 of 14</div>
+            </div>
+            
+            <!-- Page 4 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_4.jpg" alt="Page 4" class="page-image">
+                <div class="page-number">Page 4 of 14</div>
+            </div>
+            
+            <!-- Page 5 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_5.jpg" alt="Page 5" class="page-image">
+                <div class="page-number">Page 5 of 14</div>
+            </div>
+            
+            <!-- Page 6 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_6.jpg" alt="Page 6" class="page-image">
+                <div class="page-number">Page 6 of 14</div>
+            </div>
+            
+            <!-- Page 7 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_7.jpg" alt="Page 7" class="page-image">
+                <div class="page-number">Page 7 of 14</div>
+            </div>
+            
+            <!-- Page 8 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_8.jpg" alt="Page 8" class="page-image">
+                <div class="page-number">Page 8 of 14</div>
+            </div>
+            
+            <!-- Page 9 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_9.jpg" alt="Page 9" class="page-image">
+                <div class="page-number">Page 9 of 14</div>
+            </div>
+            
+            <!-- Page 10 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_10.jpg" alt="Page 10" class="page-image">
+                <div class="page-number">Page 10 of 14</div>
+            </div>
+            
+            <!-- Page 11 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_11.jpg" alt="Page 11" class="page-image">
+                <div class="page-number">Page 11 of 14</div>
+            </div>
+            
+            <!-- Page 12 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_12.jpg" alt="Page 12" class="page-image">
+                <div class="page-number">Page 12 of 14</div>
+            </div>
+            
+            <!-- Page 13 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_13.jpg" alt="Page 13" class="page-image">
+                <div class="page-number">Page 13 of 14</div>
+            </div>
+            
+            <!-- Page 14 -->
+            <div class="page">
+                <img src="./jpegs/BROCHURE 1_14.jpg" alt="Page 14" class="page-image">
+                <div class="page-number">Page 14 of 14</div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Scroll to view all pages</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple script to handle the download link
+        document.addEventListener('DOMContentLoaded', function() {
+            // You can set the PDF URL here or directly in the HTML
+            // const pdfUrl = 'your-pdf-file-url-here.pdf';
+            // document.getElementById('downloadLink').href = pdfUrl;
+            
+            // For demonstration, we'll leave it as a placeholder
+            document.getElementById('downloadLink').addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') {
+                    e.preventDefault();
+                    alert('Please update the PDF download link by replacing the # in the href attribute with your actual PDF URL.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
